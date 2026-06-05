@@ -31,6 +31,7 @@ javascript:(function() {
     var title = document.createElement('strong');
     title.textContent = blocks.length + ' JSON-LD block(s) — types: ' + (types.length ? Array.from(new Set(types)).join(', ') : 'none');
     var btns = document.createElement('div');
+    btns.style.cssText = 'display:flex;';
     var validate = document.createElement('button');
     validate.textContent = 'Open Rich Results Test';
     validate.style.cssText = 'cursor:pointer;margin-right:8px;padding:6px 10px;';
